@@ -16,6 +16,7 @@ body {
 
 header, footer {
    background-color: #9b9b8c;
+   color: #dededa;
 }
 
 header {
@@ -28,7 +29,6 @@ main {
 }
 
 small {
-   color: #dededa;
    font-size: 18px;
    margin-left: 35px;
 }
@@ -56,6 +56,7 @@ button {
 
 #splashLink {
    width: 48%;
+   display: inline-block;
    text-align: center;
    color: #490063;
    margin-top: 260px;
@@ -65,6 +66,11 @@ button {
    width: 52%;
    float: right;
    background-image: url('resources/track.fw.png');
+}
+
+#allAlbums {
+   padding: 30px;
+   overflow: scroll;
 }
 
 #randAlbums {

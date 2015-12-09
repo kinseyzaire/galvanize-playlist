@@ -1,0 +1,9 @@
+{
+  "firebase": "playlist-practice-test",
+  "public": "public",
+  "ignore": [
+    "firebase.json",
+    "**/.*",
+    "**/node_modules/**"
+  ]
+}
