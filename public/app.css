@@ -71,6 +71,7 @@ button {
 #allAlbums {
    padding: 30px;
    overflow-x: scroll;
+   width: 100%;
 }
 
 #randAlbums {
@@ -91,4 +92,8 @@ button {
    width: 100%;
    font-size: 18px;
    margin-bottom: 20px;
+}
+
+.covvvers {
+   margin-right: 35px;
 }
