@@ -1,5 +1,5 @@
 // var allDeezCovers = $("#allAlbums")
-$(document).ready(function(){
+// $(document).ready(function(){
 var getAllAlbums = $.ajax( {
       url:"https://lit-fortress-6467.herokuapp.com/object",
       method:"GET",
@@ -12,18 +12,39 @@ getAllAlbums.done(function(data){
       };
 });
 
-});
+// });
 
 var babysFirstPost = $.ajax( {
       url:"https://lit-fortress-6467.herokuapp.com/post",
       method:"POST",
    });
 
-babysFirstPost.done(function(data){
-   console.log(data);
+babysFirstPost.done(function(message){
+   console.log(message);
+});
+
+$(document).on('click','#allDuhAlbums0',function(){
+   $('#bin').append('<p>'+ getAllAlbums.responseJSON.results[0]["artist"]+ ' : '+getAllAlbums.responseJSON.results[0]["title"] +'</p>');
+});
+$(document).on('click','#allDuhAlbums1',function(){
+   $('#bin').append('<p>'+ getAllAlbums.responseJSON.results[1]["artist"]+ ' : '+getAllAlbums.responseJSON.results[1]["title"] +'</p>');
+});
+$(document).on('click','#allDuhAlbums2',function(){
+   $('#bin').append('<p>'+ getAllAlbums.responseJSON.results[2]["artist"]+ ' : '+getAllAlbums.responseJSON.results[2]["title"] +'</p>');
+});
+$(document).on('click','#allDuhAlbums3',function(){
+   $('#bin').append('<p>'+ getAllAlbums.responseJSON.results[3]["artist"]+ ' : '+getAllAlbums.responseJSON.results[3]["title"] +'</p>');
+});
+$(document).on('click','#allDuhAlbums4',function(){
+   $('#bin').append('<p>'+ getAllAlbums.responseJSON.results[4]["artist"]+ ' : '+getAllAlbums.responseJSON.results[4]["title"] +'</p>');
 });
 
 
+//
+// $('#allDuhAlbums0').click(function(){
+//    console.log("made it this far");
+//    console.log("anything append?");
+// });
 
 // var ccchoose = $("#chooseEm")
 //
