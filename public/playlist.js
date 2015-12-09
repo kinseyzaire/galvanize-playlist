@@ -14,6 +14,15 @@ getAllAlbums.done(function(data){
 
 });
 
+var babysFirstPost = $.ajax( {
+      url:"https://lit-fortress-6467.herokuapp.com/post",
+      method:"POST",
+   });
+
+babysFirstPost.done(function(data){
+   console.log(data);
+});
+
 
 
 // var ccchoose = $("#chooseEm")
