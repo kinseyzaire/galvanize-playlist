@@ -70,11 +70,25 @@ button {
 
 #allAlbums {
    padding: 30px;
-   overflow: scroll;
+   overflow-x: scroll;
 }
 
 #randAlbums {
    width: 242px;
    margin-left: 186px;
    margin-top: 10px;
+}
+
+#playlist {
+   width: 100%;
+   padding: 5%;
+}
+
+#bin {
+   background-color: #eee;
+   border: 2px solid black;
+   padding: 25px;
+   width: 100%;
+   font-size: 18px;
+   margin-bottom: 20px;
 }
