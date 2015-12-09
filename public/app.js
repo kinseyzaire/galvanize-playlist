@@ -6,12 +6,10 @@ $(document).ready(function(){
       method:"GET",
       dataType: "json",
       success: function(data) {
-      var albumsss = data.results[0]["cover_art"];
-      randomCovers.html('<img src="images/'+ data.results[0]["cover_art"] +'" width="240px" height="240px alt="album cover"><br><img src="images/'+ data.results[1]["cover_art"] +'" width="240px" height="240px alt="album cover"><br><img src="images/'+ data.results[2]["cover_art"] +'" width="240px" height="240px alt="album cover"><br>')
+      randomCovers.html('<img src="images/'+ data.results[Math.floor(Math.random() * 4)]["cover_art"] +'" width="240px" height="240px alt="album cover"><br><img src="images/'+ data.results[Math.floor(Math.random() * 4)]["cover_art"] +'" width="240px" height="240px alt="album cover"><br><img src="images/'+ data.results[Math.floor(Math.random() * 4)]["cover_art"] +'" width="240px" height="240px alt="album cover"><br>')
       }
    });
 });
-
 
 
 // var ccchoose = $("#chooseEm")
